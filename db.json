@@ -1,0 +1,39 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "firstname": "khaled",
+      "lastname": "mabrouk",
+      "email": "khaled.m@yahoo.fr",
+      "password": "aaaa",
+      "confirmpassword": "aaaa",
+      "adresse": "tunis",
+      "role": "user"
+    },
+    {
+      "id": 3,
+      "firstname": "sami",
+      "lastname": "samir",
+      "email": "sami.m@yahoo.fr",
+      "password": "aaaa",
+      "confirmpassword": "aaaa",
+      "adresse": "tunis",
+      "role": "user"
+    },
+    {
+      "firstname": "ahmed",
+      "lastname": "saidani",
+      "email": "ahmed.midos@gmail.com",
+      "password": "aaaa",
+      "confirmpassword": "aaaa",
+      "adresse": "",
+      "id": 4
+    }
+  ],
+  "posts": [
+    {
+      "idp": 1,
+      "posttitle": "title de test"
+    }
+  ]
+}

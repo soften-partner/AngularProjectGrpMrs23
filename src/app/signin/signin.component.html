@@ -1,0 +1,22 @@
+<form class="row g-3" [formGroup]="inputForm">
+    <div class="col-auto">
+      <label for="staticEmail2" class="visually-hidden">Email</label>
+      <input type="text"  class="form-control" id="staticEmail2" placeholder="email@example.com" formControlName="inputemail">
+      <div class="alert alert-danger" role="alert" *ngIf="!inputForm.pristine && inputForm.controls['inputemail'].errors?.['required']">
+        email is required !
+      </div>
+      <div class="alert alert-danger" role="alert" *ngIf="!inputForm.pristine && inputForm.controls['inputemail'].errors?.['email']">
+        email syntax is wrong !
+      </div>
+    </div>
+    <div class="col-auto">
+      <label for="inputPassword2" class="visually-hidden">Password</label>
+      <input type="password" class="form-control" id="inputPassword2" placeholder="Password" formControlName="inputpassword">
+      <div class="alert alert-danger" role="alert" *ngIf="!inputForm.pristine && inputForm.controls['inputpassword'].errors?.['required']" >
+       password is required !
+      </div>
+    </div>
+    <div class="col-auto">
+      <button type="submit" class="btn btn-primary mb-3" (click)="onsubmit()">Confirm identity</button>
+    </div>
+  </form>

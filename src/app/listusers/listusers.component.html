@@ -1,0 +1,22 @@
+<table class="table table-striped">
+    <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">FirstName</th>
+          <th scope="col">LastName</th>
+          <th scope="col">Email</th>
+          <th scope="col">Update</th>
+          <th scope="col">Delete</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let usr of tabusers">
+          <th scope="row">{{usr.id}}</th>
+          <td>{{usr.firstname}}</td>
+          <td>{{usr.lastname}}</td>
+          <td>{{usr.email}}</td>
+          <td><input type="button" value="update" (click)="updateUser(usr.id)"></td>
+          <td><input type="button" value="delete" (click)="deleteuser(usr.id)"></td>
+        </tr>
+      </tbody>
+  </table>
