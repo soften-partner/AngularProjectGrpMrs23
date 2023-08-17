@@ -1,8 +1,8 @@
 export class user {
 
-id!:number;
-firstname!:string;
-lastname!:string;
+idUser!:number;
+firstName!:string;
+lastName!:string;
 email!:string;
 password!:string;
 confirmpassword!:string;

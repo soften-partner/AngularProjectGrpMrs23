@@ -38,6 +38,7 @@ export class ListusersComponent implements OnInit {
       this.userServ.deleteuser(id).subscribe(
         (usr)=>{
 
+            console.log("returned deleted message===>"+usr)
             this.userServ.getAllusers().subscribe(
 
               (listu)=>{

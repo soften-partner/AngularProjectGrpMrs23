@@ -45,13 +45,14 @@ this.inputForm= this.fb.group(
 
           (usr)=>{
 
-            console.log(usr.firstname)
-            this.inputForm.controls['inputfname'].setValue(usr.firstname)
-            this.inputForm.controls['inputlname'].setValue(usr.lastname)
+            console.log(usr.firstName)
+            this.inputForm.controls['inputfname'].setValue(usr.firstName)
+            this.inputForm.controls['inputlname'].setValue(usr.lastName)
             this.inputForm.controls['inputemail'].setValue(usr.email)
             this.inputForm.controls['inputpassword'].setValue(usr.password)
             this.inputForm.controls['confpassword'].setValue(usr.confirmpassword)
             this.inputForm.controls['inputAdresse'].setValue(usr.adresse)
+           
           }
         )
       }
@@ -62,8 +63,8 @@ this.inputForm= this.fb.group(
   {
    let usr= new user()
 
-   usr.firstname= this.inputForm.controls['inputfname'].value
-   usr.lastname=this.inputForm.controls['inputlname'].value
+   usr.firstName= this.inputForm.controls['inputfname'].value
+   usr.lastName=this.inputForm.controls['inputlname'].value
    usr.email=this.inputForm.controls['inputemail'].value
    usr.password=this.inputForm.controls['inputpassword'].value
    usr.confirmpassword=this.inputForm.controls['confpassword'].value
@@ -73,7 +74,7 @@ this.inputForm= this.fb.group(
 
       (altuser)=>{
 
-        console.log(altuser.firstname)
+        console.log(altuser.firstName)
       }
     )
   }

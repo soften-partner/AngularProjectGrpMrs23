@@ -2,8 +2,8 @@
   "users": [
     {
       "id": 1,
-      "firstname": "khaled",
-      "lastname": "mabrouk",
+      "firstName": "khaled",
+      "lastName": "mabrouk",
       "email": "khaled.m@yahoo.fr",
       "password": "aaaa",
       "confirmpassword": "aaaa",
@@ -12,8 +12,8 @@
     },
     {
       "id": 3,
-      "firstname": "sami",
-      "lastname": "samir",
+      "firstName": "sami",
+      "lastName": "samir",
       "email": "sami.m@yahoo.fr",
       "password": "aaaa",
       "confirmpassword": "aaaa",
@@ -21,13 +21,50 @@
       "role": "user"
     },
     {
-      "firstname": "ahmed",
-      "lastname": "saidani",
+      "firstName": "ahmed",
+      "lastName": "saidani",
       "email": "ahmed.midos@gmail.com",
       "password": "aaaa",
       "confirmpassword": "aaaa",
       "adresse": "",
       "id": 4
+    },
+    {
+      "email": "medali.med@yahoo.fr",
+      "password": "$2a$10$JBPLOasjGdDt/XiKk./c0O4ibfM9zXt.kJgYz8WcygvRRd7bxBVTa",
+      "firstName": "med ali",
+      "lastName": "med",
+      "confirmpassword": "azerty",
+      "adresse": "tunis",
+      "id": 5
+    },
+    {
+      "email": "aaa.bbbb@yahoo.fr",
+      "password": "$2a$10$LrlSeoh/AMzhbqJgeZJdT.Eb5bhJ0pvykAC9sIQxjakPPD5k42Gf6",
+      "firstName": "aaaa",
+      "lastName": "aaaaa",
+      "confirmpassword": "aaaaaa",
+      "adresse": "tunis",
+      "id": 6
+    },
+    {
+      "email": "jihed.jihed@yahoo.fr",
+      "password": "$2a$10$ZAwVAHjW8wq7IFpGVuG5G.c8Ykj26wp7NLH9gX21ojsBE2MkixJhG",
+      "firstName": "jihed",
+      "lastName": "jihed",
+      "confirmpassword": "aaaaaa",
+      "adresse": "tunis",
+      "id": 7
+    },
+    {
+       "role": "user",
+      "email": "jihed.tounsi@gmail.com",
+      "password": "$2a$10$2weumooK7jTLwO3O26VlluB8L4XL6Vj5bjPzUvuuScC6X47.rp7y.",
+      "firstName": "wwwww",
+      "lastName": "wwww",
+      "confirmpassword": "aaaaaa",
+      "adresse": "tunis",
+      "id": 8
     }
   ],
   "posts": [

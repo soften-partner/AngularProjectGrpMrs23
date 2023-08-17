@@ -11,12 +11,12 @@
       </thead>
       <tbody>
         <tr *ngFor="let usr of tabusers">
-          <th scope="row">{{usr.id}}</th>
-          <td>{{usr.firstname}}</td>
-          <td>{{usr.lastname}}</td>
+          <th scope="row">{{usr.idUser}}</th>
+          <td>{{usr.firstName}}</td>
+          <td>{{usr.lastName}}</td>
           <td>{{usr.email}}</td>
-          <td><input type="button" value="update" (click)="updateUser(usr.id)"></td>
-          <td><input type="button" value="delete" (click)="deleteuser(usr.id)"></td>
+          <td><input type="button" value="update" (click)="updateUser(usr.idUser)"></td>
+          <td><input type="button" value="delete" (click)="deleteuser(usr.idUser)"></td>
         </tr>
       </tbody>
   </table>

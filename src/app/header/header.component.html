@@ -18,6 +18,9 @@
           <li class="nav-item">
             <a class="nav-link" href="/listusers">listusers</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" (click)="logout()" *ngIf="isConnected()" >Log out</a>
+          </li>
         </ul>
       </div>
     </div>

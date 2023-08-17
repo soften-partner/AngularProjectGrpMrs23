@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+import { UserService } from '../services/user.service';
 
 @Component({
   selector: 'app-signin',
@@ -12,7 +13,7 @@ export class SigninComponent implements OnInit {
   
   inputForm!:FormGroup;
 
-constructor(private fb:FormBuilder, private route:Router )
+constructor(private fb:FormBuilder, private route:Router, private userServ:UserService)
 {
 
 }
@@ -33,7 +34,18 @@ onsubmit()
   if(this.inputForm.valid)
   {
     console.log("formulaire valide !!!!!")
-    this.route.navigate(['/listusers']);
+    this.userServ.connect(this.inputForm.controls['inputemail'].value,this.inputForm.controls['inputpassword'].value).subscribe(
+
+      (authRes)=>{
+
+        console.log("first name de test d'authentification "+authRes.user.firstName)
+        console.log("Token de test d'authentification "+authRes.accessToken)
+
+        this.userServ.saveuser(authRes.user, authRes.accessToken);
+      }
+    )
+    
+    this.route.navigate(['/']);
   }
   else{
     console.log("formulaire non vakide !!!!")
